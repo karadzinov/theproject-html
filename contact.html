@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
+
+    <!--swiper-->
+    <link rel="stylesheet" href="assets/vendor/node_modules/css/swiper-bundle.min.css">
+    <!--Icons-->
+    <link href="assets/fonts/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Space+Grotesk:wght@300..700&display=swap"
+          rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="assets/css/theme-shop.min.css" rel="stylesheet">
+
+    <title>BMF Perfume Store</title>
+</head>
+
+<body>
+<!--:Preloader Spinner-->
+<div class="spinner-loader bg-gradient-secondary text-white">
+    <div class="spinner-border text-primary" role="status">
+    </div>
+    <span class="small d-block ms-2">Loading...</span>
+</div>
+
+
+<!--begin:message-->
+<div class="position-relative px-4 text-center py-2 bg-dark text-white">
+    <small>Бесплатна достава низ цела Македонија</small>
+</div>
+<!--/end:message-->
+<!--begin:Header shop-->
+<nav class="navbar navbar-search-w-icons position-sticky shadow top-0 z-index-fixed navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid position-relative">
+        <a class="navbar-brand" href="index.html">
+            <img src="/assets/img/Logo_Perfumes.jpg" alt="Logo" class="img-fluid" style="max-width: 150px">
+        </a>
+        <div class="d-flex align-items-center navbar-no-collapse-items navbar-nav flex-row order-lg-last">
+            <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbarTheme" aria-controls="mainNavbarTheme" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i></i>
+                        </span>
+            </button>
+            <div class="nav-item me-4 me-lg-2 ms-0">
+                <a href="#offcanvasCart" data-bs-toggle="offcanvas" class="nav-link lh-1 position-relative">
+                    <i class="bx bx-shopping-bag fs-4"></i>
+                    <!--card badge-->
+                    <span
+                            class="badge d-none d-lg-flex p-0 position-absolute end-0 top-0 me-n2 mt-n1 lh-1 fw-semibold width-1x height-1x bg-white shadow-sm rounded-circle flex-center text-dark">3</span>
+                </a>
+            </div>
+            <!--Search collapse trigger(hidden in desktop laptop)-->
+            <div class="nav-item ms-0 me-4 d-lg-none">
+                <a href="#searchCollapse" data-bs-target="#" data-bs-toggle="collapse"
+                   class="nav-link search-link lh-1">
+                    <i class="bx bx-search-alt-2 fs-4"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="collapse navbar-collapse" id="mainNavbarTheme">
+            <ul class="navbar-nav me-lg-auto ms-xl-5 ms-lg-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/" role="button">
+                        Почетна
+                    </a>
+
+                </li>
+
+                <li class="nav-item nav-item dropdown position-lg-static">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Мажи
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-fw py-lg-0 px-lg-0">
+                        <div class="overflow-hidden">
+                            <div class="row mx-0">
+
+                                <div class="col-lg-4 pe-lg-0 order-lg-4 pe-lg-0 ms-lg-auto d-none d-lg-flex">
+                                    <div
+                                            class="d-flex bg-dark flex-column h-100 w-100 py-4 py-md-5 position-relative">
+                                        <img alt="" src="/assets/img/foot.jpeg"
+                                             class="bg-image opacity-50">
+                                        <div
+                                                class="position-absolute text-center d-flex flex-column justify-content-center align-items-center text-white left-0 top-0 w-100 h-100 p-4">
+                                            <div>
+                                                <div
+                                                        class="d-md-flex mb-2 justify-content-center align-items-center">
+                                                        <span style="height: 1px"
+                                                              class="d-none d-md-block bg-light width-7x"></span>
+                                                    <h5 class="mb-0 mx-3 text-white">
+                                                        Лимитирана понуда
+                                                    </h5>
+                                                    <span style="height: 1px"
+                                                          class="d-none d-md-block bg-light width-7x"></span>
+                                                </div>
+                                                <h3 class="display-5">Машка колекција
+                                                </h3>
+                                                <p class="mb-4">Купете два продукти и добијте го вториот со 30%
+                                                    попуст</p>
+                                                <a href="#!" class="btn btn-hover-text btn-outline-white">
+                                                    <span class="btn-hover-label label-default">Купи сега</span>
+                                                    <span class="btn-hover-label label-hover">Купи сега</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                                <div class="col-lg-3 py-lg-5 mb-lg-0 mb-4">
+                                    <div class="d-flex flex-column mb-3">
+                                        <h5 class="dropdown-header mb-2">Машка колекција</h5>
+
+                                        <a class="dropdown-item" href="#!">
+                                            <span class="badge badge-pill bg-success py-0 small d-inline-block ms-1">Брендови</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#!">
+                                            Hugo Boss
+                                        </a>
+                                        <a class="dropdown-item" href="#!">
+                                            Paco Rabanne
+                                        </a>
+
+                                        <a class="dropdown-item" href="#!">
+                                            Chanel
+                                        </a>
+                                        <a class="dropdown-item" href="#!">
+                                            Viktor & Rolf
+                                        </a>
+                                        <a class="dropdown-item" href="#!">
+                                            Tom Ford
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                            </div>
+                            <!--/.row-->
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item nav-item dropdown position-static ">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Жени
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-fw px-lg-0 py-lg-0">
+                        <div class="overflow-hidden">
+                            <div class="row mx-0">
+
+                                <div class="col-lg-4 pe-lg-0 order-lg-4 pe-lg-0 ms-lg-auto d-none d-lg-flex">
+                                    <div
+                                            class="d-flex bg-dark flex-column h-100 w-100 py-4 py-md-5 position-relative">
+                                        <img alt="" src="/assets/img/profi5.jpg"
+                                             class="bg-image opacity-50">
+                                        <div
+                                                class="position-absolute text-center d-flex flex-column justify-content-center align-items-center text-white left-0 top-0 w-100 h-100 p-4">
+                                            <div>
+                                                <div
+                                                        class="d-md-flex mb-2 justify-content-center align-items-center">
+                                                        <span style="height: 1px"
+                                                              class="d-none d-md-block bg-light width-7x"></span>
+                                                    <h5 class="mb-0 mx-3 text-white">
+                                                        Лимитирана понуда
+                                                    </h5>
+                                                    <span style="height: 1px"
+                                                          class="d-none d-md-block bg-light width-7x"></span>
+                                                </div>
+                                                <h3 class="display-5">Женска колекција
+                                                </h3>
+                                                <p class="mb-4">Купете два продукти и добијте го вториот со 30%
+                                                    попуст</p>
+                                                <a href="#!" class="btn btn-hover-text btn-outline-white">
+                                                    <span class="btn-hover-label label-default">Купи сега</span>
+                                                    <span class="btn-hover-label label-hover">Купи сега</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.col-->
+                                <div class="col-lg-3 py-lg-5 mb-lg-0 mb-4">
+                                    <div class="d-flex flex-column mb-3">
+                                        <h5 class="dropdown-header mb-2">Женска колекција</h5>
+
+                                        <a class="dropdown-item" href="#!">
+                                            <span class="badge badge-pill bg-success py-0 small d-inline-block ms-1">Брендови</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#!">
+                                            Hugo Boss
+                                        </a>
+                                        <a class="dropdown-item" href="#!">
+                                            Paco Rabanne
+                                        </a>
+
+                                        <a class="dropdown-item" href="#!">
+                                            Chanel
+                                        </a>
+                                        <a class="dropdown-item" href="#!">
+                                            Viktor & Rolf
+                                        </a>
+                                        <a class="dropdown-item" href="#!">
+                                            Tom Ford
+                                        </a>
+                                    </div>
+
+                                    <!--/.col-->
+                                </div>
+                                <!--/.row-->
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                        Контакт
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="collapse collapse-search ms-xl-auto ms-lg-3 me-lg-1 d-lg-block" style="--navbar-search-width:280px;"
+             id="searchCollapse">
+            <form action="#">
+                <div class="position-relative mt-3 mt-lg-0">
+                            <span class="position-absolute start-0 top-50 translate-middle-y ms-3 opacity-50">
+                                <i class="bx bx-search-alt-2"></i>
+                            </span>
+                    <input type="text" placeholder="Пребарај продукт..." class="form-control ps-6 rounded-pill">
+                    <!--With Submit button-->
+                    <!-- <button class="btn position-absolute end-0 top-0 flex-center p-0 width-4x h-100 rounded-pill btn-white">
+                        <i class="bx bx-search-alt-2"></i>
+                    </button>
+                    <input type="text" placeholder="Search here..." class="form-control border-0 shadow-none ps-4 pe-6 rounded-pill">
+               -->
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+<!--/end:Header shop-->
+
+<!--begin:Search bar modal-->
+<div id="modal-search-bar-2" class="modal fade" tabindex="-1" aria-labelledby="modal-search-bar-2"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-top modal-md">
+        <div class="modal-content position-relative border-0">
+            <div class="position-relative px-4">
+                <div
+                        class="position-absolute end-0 width-7x top-0 d-flex me-4 align-items-center h-100 justify-content-center">
+                    <button type="button" class="btn-close w-auto small" data-bs-dismiss="modal"
+                            aria-label="Close">Cancel
+                    </button>
+                </div>
+                <form class="mb-0">
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex flex-grow-1 align-items-center">
+                            <i class="bx bx-search fs-4"></i>
+                            <input type="text" placeholder="Search...."
+                                   class="form-control shadow-none border-0 flex-grow-1 form-control-lg">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="p-4 border-top">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bx bx-trending-up fs-4"></i>
+                    <h6 class="mb-0 ms-2">
+                        Top searches
+                    </h6>
+                </div>
+                <div class="d-flex flex-wrap align-items-center">
+                            <span><a href="#!"
+                                     class="badge badge-pill border text-muted me-1 mb-1 px-3 py-1">Jeans</a></span>
+                    <span><a href="#!"
+                             class="badge badge-pill border text-muted me-1 mb-1 px-3 py-1">Shoes</a></span>
+                    <span><a href="#!"
+                             class="badge badge-pill border text-muted me-1 mb-1 px-3 py-1">Watches</a></span>
+                    <span><a href="#!"
+                             class="badge badge-pill border text-muted me-1 mb-1 px-3 py-1">Men's</a></span>
+                    <span><a href="#!"
+                             class="badge badge-pill border text-muted me-1 mb-1 px-3 py-1">Sneakers</a></span>
+                    <span><a href="#!"
+                             class="badge badge-pill border text-muted me-1 mb-1 px-3 py-1">Casual</a></span>
+                    <span><a href="#!"
+                             class="badge badge-pill border text-muted me-1 mb-1 px-3 py-1">Shirts</a></span>
+                    <span><a href="#!"
+                             class="badge badge-pill border text-muted me-1 mb-1 px-3 py-1">T-shirts</a></span>
+                    <span><a href="#!"
+                             class="badge badge-pill border text-muted me-1 mb-1 px-3 py-1">Lowers</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/end:Search bar modal-->
+
+<!--begin:Cart offcanvas-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCart">
+    <div class="border-bottom offcanvas-header align-items-center justify-content-between">
+        <h5 class="mb-0">Your Cart (3)</h5>
+
+        <button type="button"
+                class="btn-close shadow-none text-reset p-0 m-0 width-3x height-3x flex-center ms-auto"
+                data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="bx bx-x fs-4"></i>
+        </button>
+    </div>
+    <div class="offcanvas-body p-4">
+        <ul class="list-unstyled no-animation mb-0">
+            <li class="d-flex py-3 border-bottom">
+                <div class="me-1">
+                    <a href="#!"><img src="/assets/img/shop/backpack2.jpg"
+                                      class="height-10x hover-lift hover-shadow w-auto" alt=""></a>
+                </div>
+                <div class="flex-grow-1 px-4 mb-3">
+                    <a href="#!" class="text-dark d-block lh-sm fw-semibold mb-2">Laptop backpack water
+                        proof</a>
+                    <p class="mb-0 small"><strong>$36.00</strong> x
+                        <strong>1</strong>
+                    </p>
+                </div>
+                <div class="d-block text-end">
+                    <a href="#!" class="text-muted small text-decoration-underline">
+                        Remove
+                    </a>
+                </div>
+            </li>
+            <li class="d-flex py-3">
+                <div class="me-1">
+                    <a href="#!"><img src="/assets/img/shop/jacket1.jpg"
+                                      class="height-10x hover-lift hover-shadow w-auto" alt=""></a>
+                </div>
+                <div class="flex-grow-1 px-4 mb-3">
+                    <a href="#!" class="text-dark d-block lh-sm fw-semibold mb-2">Brown denim jacket for
+                        mens</a>
+                    <p class="mb-0 small"><strong>$59.00</strong> x
+                        <strong>2</strong>
+                    </p>
+                </div>
+                <div class="d-block text-end">
+                    <a href="#!" class="text-muted small text-decoration-underline">
+                        Remove
+                    </a>
+                </div>
+            </li>
+            <li class="d-flex p-3 mb-3 border-top justify-content-between align-items-center">
+                <span class="fw-normal">Subtotal</span>
+                <span class="text-dark fw-bold">$154.00</span>
+            </li>
+        </ul>
+    </div>
+    <div class="offcanvas-footer p-4 border-top">
+        <ul class="list-unstyled mb-0">
+
+            <li class="pb-2 d-grid">
+                <a href="#" class="btn btn-secondary btn-hover-arrow"><span>View
+                                shopping cart</span></a>
+            </li>
+            <li class="d-grid">
+                <a href="#" class="btn btn-primary btn-hover-arrow"><span>Checkout</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--/end:Cart offcanvas-->
+
+
+
+    <main class="main-content" id="main-content">
+        <section class="position-relative bg-primary bg-opacity-10">
+            <!--divider-->
+            <svg class="position-absolute start-0 bottom-0 text-white flip-y" width="100%" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 152" fill="none" preserveAspectRatio="none">
+                <path d="M126.597 138.74C99.8867 127.36 76.6479 109.164 59.2161 85.9798L0 3.05176e-05L1440 0C1440 0 1419.98 25.8404 1380.15 32.9584L211.382 150.811C182.549 154.283 153.308 150.12 126.597 138.74Z" fill="currentColor"></path>
+            </svg>
+            <div class="container position-relative pt-12 pb-9">
+                <div class="row align-items-center pb-8 pt-lg-9">
+                    <div class="col-md-10 col-lg-8">
+                        <h1 class="display-2 mb-3">
+                            Контактирајте не...
+                        </h1>
+                        <p class="mb-0 lead pe-lg-8">Имате прашања или предлози за нас?
+                            Пополнете ја контакт формата подолу и добијте одговор веднаш.
+                        </p>
+                    </div>
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.content-->
+        </section>
+        <!--/section-->
+
+        <section class="position-relative">
+            <div class="container py-9 py-lg-11">
+                <div class="row">
+                    <div class="col-md-8 col-lg-7 mb-7 mb-md-0 me-auto">
+                        <div class="position-relative">
+                            <h1>
+                                Контакт форма
+                            </h1>
+                            <p class="mb-3 w-lg-75">
+                                Користете ја формата за контакт ако имате прашања во врска со нашите продукти.
+                                Нашиот тим ви стои на располагање.
+                            </p>
+                            <div class="width-7x pt-1 bg-primary mb-5"></div>
+                            <!-- Contacts Form -->
+                            <form action="#" method="post" role="form" class="needs-validation mb-5 mb-lg-7" novalidate="">
+                                <div class="row">
+                                    <!-- Input -->
+                                    <div class="col-sm-6 mb-3">
+                                        <label class="form-label" for="name">Име и Презиме</label>
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Перо Перевски" required="">
+                                    </div>
+                                    <!-- End Input -->
+
+                                    <!-- Input -->
+                                    <div class="col-sm-6 mb-3">
+                                        <label class="form-label" for="email">Email адреса</label>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="pero@gmail.com" aria-label="jackwayley@gmail.com" required="">
+                                        <div class="invalid-feedback">
+                                            Ве молиме внесете валидна адреса
+                                        </div>
+                                    </div>
+
+                                    <div class="w-100"></div>
+
+                                </div>
+
+                                <!-- Message -->
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Порака</label>
+                                    <textarea class="form-control" name="message" placeholder="Напишете ни порака...." required="" style="display: block; overflow: hidden; overflow-wrap: break-word; resize: none; height: 70px;"></textarea>
+                                    <div class="invalid-feedback">
+                                        Ве молиме внесете го посакуваниот текст.
+                                    </div>
+                                </div>
+
+                            </form>
+                            <!-- End Contacts Form -->
+
+                            <!--Card-->
+                            <div class="px-4 py-7 px-lg-5 py-lg-7 border border-2 rounded-3 position-relative aos-init aos-animate" data-aos="fade-up">
+                                <div class="position-relative">
+
+                                    <h3 class="mb-4">Неопходна ви е поддршка за корисници?</h3>
+                                    <p class="w-lg-90 mb-5 lead">
+                                        Доколку сте наш клиент и ви е потребна подршка за корисници, нашиот тим ви стои на располагање.
+                                    </p>
+                                    <div class="width-6x pt-1 bg-success mb-5"></div>
+                                    <a href="#" class="btn btn-outline-primary btn-rise">
+                                        <div class="btn-rise-bg bg-primary"></div>
+                                        <div class="btn-rise-text">
+                                            Поддршка за корисници
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div data-aos="fade-up" class="aos-init aos-animate">
+                            <h4 class="mb-0">Global Offices</h4>
+                            <div class="border-top border-2 border-secondary mb-4 mt-2 aos-init aos-animate" data-aos="fade-up"></div>
+                        </div>
+                        <div data-aos="fade-up" class="aos-init aos-animate">
+                            <h5>USA</h5>
+                            <div class="position-relative">
+                                <p><strong>Brooklyn </strong><br>Street name 21, Ipsum,<br> 12345,&nbsp;New York
+                                    City</p>
+                                <p>Phone:&nbsp;+01 1234 456 678<br>Fax: +01 1234 567 890<br>Website: <a rel="noopener" href="#!">www.site.se</a><br>Email: <a rel="noopener" href="#!">info@yourmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-top border-2 border-secondary my-4 my-lg-5 aos-init aos-animate" data-aos="fade-up"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--divider-->
+        <svg class="position-relative start-0 bottom-0 text-gray-800 flip-y" width="100%" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 152" fill="none" preserveAspectRatio="none">
+            <path d="M126.597 138.74C99.8867 127.36 76.6479 109.164 59.2161 85.9798L0 3.05176e-05L1440 0C1440 0 1419.98 25.8404 1380.15 32.9584L211.382 150.811C182.549 154.283 153.308 150.12 126.597 138.74Z" fill="currentColor"></path>
+        </svg>
+        <section class="bg-gray-800 text-white overflow-hidden position-relative">
+            <div class="container py-9 py-lg-11">
+                <div class="row align-items-end position-relative">
+                    <div class="col-lg-7 text-center text-lg-start">
+                        <h5 class="mb-3">Let's start building</h5>
+                        <h1 class="mb-5 mb-lg-0 display-4">Stunning websites ease</h1>
+                    </div>
+                    <div class="col-lg-5 text-lg-end text-center">
+                        <a href="#!" class="btn btn-outline-white btn-lg me-2 mb-2 mb-lg-0 rounded-4">Contact sales</a>
+                        <a href="#!" class="btn btn-gray-200 btn-lg rounded-4">Purchase Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+<!--begin:footer-->
+<footer class="position-relative bg-dark text-white overflow-hidden">
+    <div class="container pt-9 pt-lg-11 pb-6 position-relative">
+        <div class="row">
+            <div class="col-6 col-lg-3 col-xl-2 order-lg-2 ms-lg-auto mb-6">
+                <h6 class="mb-4">Купувај Онлајн</h6>
+                <!-- nav -->
+                <ul class="nav flex-column mb-0">
+                    <li class="nav-item"><a class="nav-link" href="#!">Нарачај</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Достава</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Следи ја Нарачката</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Плати</a></li>
+                </ul>
+                <!-- /.nav -->
+            </div>
+
+            <div class="col-6 col-lg-3 col-xl-2 order-lg-3 ms-lg-auto mb-6">
+                <h6 class="mb-4">За Нас</h6>
+
+                <ul class="nav flex-column mb-0">
+                    <li class="nav-item"><a class="nav-link" href="#!">Продажба</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Контакт</a></li>
+                    <li class="nav-item d-flex justify-content-between align-items-center">
+                        <a class="nav-link" href="#!">Помош
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.nav -->
+            </div>
+
+            <div class="col-md-6 col-lg-3 col-xl-2 ms-lg-auto order-lg-4 mb-6">
+                <h6 class="mb-4">Брендови</h6>
+                <ul class="nav flex-column mb-0">
+                    <li class="nav-item"><a class="nav-link" href="#!">Dior</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Tom Ford</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Chanel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Boss</a></li>
+                    <li class="nav-item d-flex justify-content-between align-items-center">
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 order-lg-1 mb-6">
+                <div class="d-flex align-items-md-stretch flex-column h-100">
+                    <div class="flex-grow-1 d-flex flex-column">
+                        <small class="d-block mb-3">
+                        </small>
+                        <div class="mb-4">
+                            <a href="https://www.instagram.com/accounts/login/" class="btn btn-outline-white btn-rise">
+                                <div class="btn-rise-bg bg-white"></div>
+                                <div class="btn-rise-text">
+                                    <i class="bx bxl-instagram me-1 align-middle fs-5"></i> Следи не на Инстаграм
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <p class="small text-muted mb-0">© Perfume BMF store. by PingDevs</p>
+                    <!-- End Copyright -->
+                </div>
+            </div>
+        </div>
+        <hr class="bg-transparent border-top border-white opacity-25 mb-6 mt-0">
+        <div class="row align-items-md-center">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <!--:payment options-->
+                <div class="d-flex justify-content-start">
+
+                    <div class="d-block me-2 my-1">
+                        <img src="/assets/img/payment/visa.svg" alt="">
+                    </div>
+                    <div class="d-block me-2 my-1">
+                        <img src="/assets/img/payment/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+                <!--:/payment options-->
+            </div>
+
+            <div class="col-md-2 col-xl-4 mb-3 mb-md-0">
+                <!-- Links -->
+                <ul class="list-inline small mb-0">
+                    <li class="list-inline-item me-3">
+                        <a class="d-block" href="https://www.facebook.com">
+
+                            <button class="bx bxl-facebook fs-4"></button>
+                        </a>
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <a class="d-block" href="https://twitter.com/">
+
+                            <button class="bx bxl-twitter fs-4"></button>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="d-block" href="https://www.linkedin.com/" target="_blank">
+
+                            <button class="bx bxl-linkedin fs-4"></button>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End Links -->
+            </div>
+
+
+            <div class="col-md-6 col-xl-4 text-md-end">
+                <!-- Links -->
+                <ul class="list-inline small mb-0">
+                    <li class="list-inline-item me-3">
+                        <a class="d-block" href="#!">изјава за приватност</a>
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <a class="d-block" href="#!">услови за користенје</a>
+                    </li>
+                </ul>
+                <!-- End Links -->
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/end:footer-->
+
+<!-- begin:Back to top -->
+<a href="#top"
+   class="toTop">
+    <i class="bx bxs-up-arrow align-middle lh-1"></i>
+</a>
+<!-- end:Back to top -->
+
+
+<!-- scripts -->
+<script src="assets/js/theme.bundle.js"></script>
+
+
+<!--Page Countdown + Swiper Slider scripts-->
+<script src="assets/vendor/node_modules/js/jquery.min.js"></script>
+<script src="assets/vendor/node_modules/js/jquery.countdown.min.js"></script>
+<script src="assets/vendor/node_modules/js/swiper-bundle.min.js"></script>
+<script>
+    //Swiper Classic
+    var swiperClassic = new Swiper(".swiper-classic", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 2500
+        },
+        pagination: {
+            el: ".swiperClassic-pagination",
+            clickable: true
+        }
+    });
+
+    function get1dayFromNow() {
+        return new Date(new Date().valueOf() + 1 * 24 * 60 * 60 * 1000);
+    }
+
+    var $clock = $('.countdown-timer');
+
+    $clock.countdown(get1dayFromNow(), function (event) {
+        $(this).html(event.strftime(
+            '<div class="d-flex flex-column px-2 width-7x"><h2 class="mb-0 h4">%H</h2><span class="small text-muted">Hours</span></div><div class="d-flex flex-column px-2 width-7x"><h2 class="mb-0 h4">%M</h2><span class="small text-muted">Minutes</span></div><div class="d-flex flex-column px-2 width-7x"><h2 class="mb-0 h4">%S</h2><span class="small text-muted">Seconds</span></div>'
+        ));
+    });
+    //Swiper testimonials
+    var swiper = new Swiper(".swiper-testimonials", {
+        loop: true,
+        autoHeight: true,
+        slidesPerView: 1,
+        spaceBetween: 16,
+        pagination: {
+            el: ".swiperT-pagination", clickable: true
+        },
+    });
+</script>
+</body>
+
+</html>
